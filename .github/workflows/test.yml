@@ -1,9 +1,10 @@
 name: Go Tests
 on:
   pull_request:
+  workflow_dispatch:
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 10
     steps:
     - name: Set up Go
